@@ -1,1 +1,87 @@
-/* add styles here */
+@font-face {
+  font-family: Avenir;
+  font-weight: 400;
+  src: url('./fonts/Avenir-Book.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Avenir;
+  font-weight: 900;
+  src: url('./fonts/Avenir-Heavy.ttf');
+  font-style: normal;
+}
+
+body {
+  font-family: Avenir, serif;
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.firstbar {
+  font-family: Avenir, serif;
+  font-weight: 400;
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  box-shadow: 0 1px 8px 0 rgba(61, 78, 97, 0.1);
+  font-size: 16px;
+  outline: none;
+  height: 70px;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  background-size: 19px;
+  padding-left: 62px;
+  margin-bottom: 20px;
+}
+
+.secondbar {
+  font-family: Avenir, sans-serif;
+  font-weight: 400;
+  border: 1px solid #e1e7ed;
+  outline: none;
+  font-size: 14px;
+  height: 42px;
+  width: 100%;
+  box-sizing: border-box;
+  background-image: url(./images/Search.svg);
+  background-repeat: no-repeat;
+  background-position: 15px 13px;
+  background-size: 11px;
+  padding-left: 33px;
+}
+
+.firstbar::placeholder {
+  font-family: Avenir, serif;
+  font-weight: 400;
+  color: #3d4e61;
+}
+
+.secondbar::placeholder {
+  font-family: Avenir, serif;
+  font-weight: 400;
+  color: #3d4e61;
+}
+
+.firstbar:hover {
+  box-sizing: border-box;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.secondbar:hover {
+  box-sizing: border-box;
+  box-shadow: 0 3px 8px #3d4e61;
+}
+
+.firstbar:focus {
+  box-sizing: border-box;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07);
+}
+
+.secondbar:focus {
+  box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
